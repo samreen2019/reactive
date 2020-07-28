@@ -7,8 +7,8 @@ import {Observable} from 'rxjs';
 @Injectable()
 export class QuoteReactiveService {
 
-  url: string = 'http://localhost:3000/quotes-reactive';
-  urlPaged: string = 'http://localhost:3000/quotes-reactive-paged';
+  url: string = '/quotes-reactive';
+  urlPaged: string = '/quotes-reactive-paged';
 
   getQuoteStream(page?: number, size?: number): Observable<Quote> {
     return new Observable<Quote>((observer) => {

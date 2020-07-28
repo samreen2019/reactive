@@ -8,8 +8,8 @@ import {Observable} from "rxjs";
 @Injectable()
 export class QuoteBlockingService {
 
-  url: string = 'http://localhost:3000/quotes-blocking';
-  urlPaged: string = 'http://localhost:3000/quotes-blocking-paged';
+  url: string = '/quotes-blocking';
+  urlPaged: string = '/quotes-blocking-paged';
 
   constructor(private http: HttpClient) {}
 
